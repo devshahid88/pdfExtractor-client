@@ -85,15 +85,16 @@ body {
 }
 
 .text-blue-600 {
-  color: rgb(37 99 235);
+  color: #667eea;
 }
 
 .bg-white {
   background-color: white;
+  backdrop-filter: blur(10px);
 }
 
 .bg-gray-50 {
-  background-color: rgb(249 250 251);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .bg-gray-100 {
@@ -109,39 +110,39 @@ body {
 }
 
 .bg-blue-50 {
-  background-color: rgb(239 246 255);
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 .bg-blue-600 {
-  background-color: rgb(37 99 235);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .bg-blue-700 {
-  background-color: rgb(29 78 216);
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
 }
 
 .bg-green-100 {
-  background-color: rgb(220 252 231);
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
 
 .text-green-700 {
-  color: rgb(21 128 61);
+  color: #059669;
 }
 
 .shadow-sm {
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  box-shadow: 0 4px 15px 0 rgba(102, 126, 234, 0.2);
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 8px 20px -2px rgba(102, 126, 234, 0.3), 0 4px 8px -2px rgba(118, 75, 162, 0.2);
 }
 
 .shadow-xl {
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 25px 50px -12px rgba(102, 126, 234, 0.4), 0 12px 20px -8px rgba(118, 75, 162, 0.3);
 }
 
 .shadow-inner {
-  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  box-shadow: inset 0 2px 8px 0 rgba(102, 126, 234, 0.15);
 }
 
 .rounded-xl {
@@ -169,19 +170,19 @@ body {
 }
 
 .border-gray-100 {
-  border-color: rgb(243 244 246);
+  border-color: rgba(243, 244, 246, 0.5);
 }
 
 .border-gray-200 {
-  border-color: rgb(229 231 235);
+  border-color: rgba(229, 231, 235, 0.6);
 }
 
 .border-blue-100 {
-  border-color: rgb(219 234 254);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
 .border-blue-500 {
-  border-color: rgb(59 130 246);
+  border-color: #667eea;
 }
 
 .px-6 {
@@ -284,15 +285,18 @@ body {
 }
 
 .hover\:border-blue-300:hover {
-  border-color: rgb(147 197 253);
+  border-color: #667eea;
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
 }
 
 .hover\:bg-blue-700:hover {
-  background-color: rgb(29 78 216);
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.5);
 }
 
 .hover\:text-blue-800:hover {
-  color: rgb(30 64 175);
+  color: #5568d3;
 }
 
 .fixed {
