@@ -3,7 +3,9 @@ import UploadForm from "../components/UploadForm";
 import PdfPreview from "../components/PdfPreview";
 import { api } from "../services/api";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL?.replace('/api', '') || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_URL 
+  ? import.meta.env.VITE_API_URL.replace(/\/api$/, '') 
+  : "http://localhost:5000";
 
 export default function Home() {
   const [fileId, setFileId] = useState<string | null>(null);
