@@ -37,6 +37,19 @@ A web app where you can upload a PDF, see all its pages, select which ones you w
 
 ## Setup & Run
 
+### Environment Variables
+Create a `.env` file in the client directory (copy from `.env.example`):
+
+```bash
+# For production (Netlify)
+VITE_API_URL=https://api-pdfextractor.onrender.com/api
+
+# For local development
+VITE_API_URL=http://localhost:5000/api
+```
+
+**Note:** The `.env` file is git-ignored. Use `.env.example` as a template.
+
 ### Install Dependencies
 ```bash
 npm install
